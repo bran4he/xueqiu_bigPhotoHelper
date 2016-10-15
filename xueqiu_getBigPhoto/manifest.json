@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "xueqiu大头像",
+    "version": "1.0",
+    "description": "一个简单的插件，在雪球网页面右击会员的链接，选择查看大头像，即可查看该会员上传的原始头像。查看女性会员有福利哟！",
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "icons": {
+        "16": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://xueqiu.com/*"],
+            "js": ["js/content.js"]
+        }
+    ],
+    "permissions": [
+        "contextMenus"
+    ]
+}
