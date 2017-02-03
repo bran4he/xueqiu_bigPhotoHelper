@@ -1,6 +1,6 @@
 chrome.contextMenus.create({
     'type':'normal',
-    'title':'查看雪球大头像……',
+    'title':'查看雪球头像……',
     'contexts':['link'],
     'id':'xueqiu',
     'onclick':getLargePhoto,
@@ -26,6 +26,7 @@ function httpRequest(url, callback){
     }
     xhr.send();
 }
+
 
 function getLargePhoto(info, tab){
     console.info('getLargePhoto url:' + url);
